@@ -1,0 +1,289 @@
+:root{
+    /* CSS HEX */
+--brandeis-blue: #256effff;
+--tekhelet: #46237aff;
+--emerald: #3ddc97ff;
+
+/* CSS HEX */
+--canary: #FFE800ff;
+--cobalt-blue: #1047AEff;
+--dodger-blue: #0A9AFAff;
+
+}
+
+*{
+    font-family: 'Manrope';
+    margin: 0;
+}
+.nav_container{
+    background-color: var(--cobalt-blue);
+}
+.circle {
+    width: 7%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%; /* Makes the background circular */
+    text-align: center;
+    padding: 4px;
+}
+.circle:hover{
+    filter: invert();
+    scale: 1.2;
+}
+.social_links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+}
+h1{
+    font-size: 2em;
+    padding: 2%;
+    color: #FFFFFF;
+    filter: drop-shadow(2px 2px 6px black);
+}
+.navigation ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: -4%;
+    color: #FFFFFF;
+} 
+.navigation ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    filter: drop-shadow(1px 3px 3px black);
+}
+.navigation ul li a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.emergency{
+    margin: auto auto auto 85%;
+    text-align: center;
+    font-size: 1.3em;
+    color: var(--canary);
+    filter: drop-shadow(1px 1px 5px black);
+}
+.emergency a{
+    color: #ffffff;
+    font-weight: bold;
+}
+.main{
+    background: url(Images/vecteezy_happy-joyful-family_27027720.png);
+    background-size: 100%;
+}
+.txtonimg{
+    width: 30%;
+    padding: 7% 0% 22% 35%;
+}
+.txtonimg h2{
+    font-size: 2.6em;
+    margin: 2%;
+    color: #FFFFFF;
+    filter: drop-shadow(3px 3px 3px black)
+            drop-shadow(3px 3px 10px rgb(0, 0, 0,1));
+}
+.txtonimg p{
+    color: #FFFFFF;
+    filter: drop-shadow(3px 3px 3px black);
+}
+.txtonimg button{
+    position: absolute;
+    right: 16%;
+    margin: 2%;
+    filter: drop-shadow(3px 3px 3px black);
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.5%;
+    &:hover{
+        background-color: var(--canary);
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+}
+.welcome{
+    margin-left: 5%;
+    width: 25%;
+    margin-right: 17%;
+}
+.welcome h2{
+    padding: 0% 2%;
+    text-transform: uppercase;
+    display: inline;
+    margin-bottom: 2%;
+    background: var(--canary);
+}
+.welcome h3{
+    margin-top: 3%;
+    font-size: 2em;
+    display: inline-block;
+}
+article{
+    width: 50%;
+    margin-left: -3%;
+}
+.welcomediv{
+    display: flex;
+    margin: 15% 0% 0%;
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8%;
+    text-align: center;
+    position: relative;
+    width: 85%;
+    margin: 10% 8% 15%;
+}
+.images .img1 img, .img2, .img3{
+    transition: 0.3s ease;
+    &:hover{
+    scale: 1.1;
+    filter: drop-shadow(4px 4px 20px rgb(28, 28, 28));
+    }
+}
+.images p{
+    color: #FFFFFF;
+    background: var(--cobalt-blue);
+    position: absolute;
+}
+.images .img1 p{
+    bottom: -14%;
+    padding: 0% 7.3% 0%;
+    text-align: center;
+}
+.images .img2 p{
+    bottom: -14%;
+    padding: 0% 6.57% 0%;
+}
+.images .img3 p{
+    bottom: -14%;
+    padding: 0% 6.92% 0%;
+}
+.features{
+    display: flex;
+    background-color: #edecec;
+    margin-bottom: 5%;
+}
+.features .img{
+    scale: 1.4;
+    margin: 5% 3.5%;
+}
+.features .text{
+    width: 60%;
+    margin-left: 6%;
+    align-content: center;
+}
+.features .text h2{
+    display: inline;
+    text-transform: uppercase;
+    background: var(--canary);
+    margin-bottom: 8%;
+    padding: 0px 2%;
+}
+.features .text h3{
+    font-size: 2em;
+    width: 68%;
+    margin-top: 1%;
+}
+.features .text ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0%;
+    width: 65%;
+}
+.features .text ul li a{
+    text-decoration: none;
+    padding: 4px 6px;
+}
+.features .text ul li a:hover{
+    text-decoration: none;
+    background-color: var(--tekhelet);
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+.features .text p{
+    width: 80%;
+    margin-top: 7%;
+}
+.achievements{
+    display: flex;
+    margin-bottom: 10%;
+}
+.achievements .funfact{
+    width: 40%;
+    margin: 5%;
+}
+.achievements .funfact h2{
+    display: inline;
+    text-transform: uppercase;
+    background: var(--canary);
+    margin-bottom: 8%;
+    padding: 0px 2%;
+}
+.achievements .funfact h3{
+    margin: 2% 0%;
+    font-size: 2em;
+}
+.achievements .figures{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    column-gap: 30%;
+    justify-items: center;
+    align-items: center;
+    margin-left: 10%;
+}
+footer{
+    background: rgba(16, 71, 174, 0.402);
+    display: flex;
+}
+footer div{
+    width: 16%;
+    margin: 1% 2%;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgb(9, 43, 107);
+    filter: drop-shadow(3px 3px 10px rgb(0, 0, 10,0.3));
+    padding: 5% 3%;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    &:hover{
+        scale: 1.05;
+    }
+}
+footer div img{
+    padding: 4%;
+    margin-bottom: 8%;
+    background: var(--canary);
+    border-radius: 10px;
+}
+footer div p{
+    text-align: left;
+    margin-top: 8%;
+}
+footer div a:first-of-type{
+    text-align: left;
+    display: block;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+footer div a{
+    text-align: left;
+    display: block;
+    color: #FFFFFF;
+    margin-top: 4%;
+}
+.last nav ul{
+    padding: 1% 6% 1%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(9, 43, 107);
+}
+.last nav ul li a{
+    color: rgb(213, 234, 255);
+}
